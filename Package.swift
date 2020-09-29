@@ -14,8 +14,8 @@ let package = Package(
         .library(name: "RxSwiftRexDynamic", type: .dynamic, targets: ["SwiftRex", "RxSwiftRex"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0"),
-        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.1.0")
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .revision("a82518285848456f404abba1919120161465ea9f")),
+        .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "6.4.0")
     ],
     targets: [
         .target(name: "SwiftRex"),
